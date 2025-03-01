@@ -9,7 +9,6 @@ def get_mask_card_number(number_card: int) -> str:
     return final_super
 
 
-print(get_mask_card_number(7000792289606361))
 
 
 def get_mask_account(number_cheta: int) -> str:
@@ -21,4 +20,4 @@ def get_mask_account(number_cheta: int) -> str:
     return final_number
 
 
-print(get_mask_account(73654108430135874305))
+
