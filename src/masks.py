@@ -9,8 +9,6 @@ def get_mask_card_number(number_card: int) -> str:
     return final_super
 
 
-
-
 def get_mask_account(number_cheta: int) -> str:
     """Функция принимает на вход номер счета и возвращает его маску"""
     true_number_cheta = str(number_cheta)
@@ -18,6 +16,3 @@ def get_mask_account(number_cheta: int) -> str:
     last_numbers = true_number_cheta[-4:]
     final_number = j + last_numbers
     return final_number
-
-
-
