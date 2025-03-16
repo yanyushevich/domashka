@@ -3,6 +3,8 @@ def filter_by_state(list_dictionaries: list, value: str = "EXECUTED") -> list:
     возвращает новый список словарей, содержащий только те словари, у которых ключ
     state соответствует указанному значению."""
     true_list = list()
+    if not list_dictionaries:
+        raise TypeError("Некоректный список")
     for dictionar in list_dictionaries:
         if dictionar.get("state") == value:
             true_list.append(dictionar)
